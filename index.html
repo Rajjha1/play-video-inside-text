@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Video Inside Text</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        body {
+            background-color: #383838;
+        }
+
+        section#bg {
+            position: relative;
+        }
+
+        section#bg video {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+
+        section#bg h1 {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: #000;
+            color: #fff;
+            font-size: 100px;
+            text-align: center;
+            line-height: 100vh;
+            mix-blend-mode: darken;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="bg">
+        <video autoplay loop muted>
+            /* Change the video path as per yours */
+            <source src="video.mp4" type="video/mp4" />
+        </video>
+        <h1>theraj_coder</h1>
+    </section>
+</body>
+
+</html>
